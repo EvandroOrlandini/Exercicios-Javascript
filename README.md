@@ -76,7 +76,7 @@ var possuiPet = false
 var filmesFavoritos = [ "ET", "Rambo",]
 
 
-### Exercício 05 - Usando variáveis -Cartão de Visita
+### Exercício 05 - Usando variáveis - Cartão de Visita
 Temos um desafio para você! 
 
 Precisamos criar um código que gere cartão de visita com nome, sobrenome e profissão dos clientes, para isso:
@@ -147,6 +147,28 @@ console.log(janeiro + fevereiro + marco)
 
 var valorTotal = (janeiro + fevereiro + marco )
 
+
+### Exercício 07 - Cálculos
+Declare 6 variáveis de memória com os seguintes nomes: numeroA, numeroB, soma, subtracao, multiplicacao e divisao (observem que nomes de variáveis não tem acento).
+
+#### Solução:
+
+let numeroA = 6
+
+let numeroB = 2
+
+console.log(numeroA + numeroB
+)
+var soma = (numeroA+numeroB)
+
+console.log(numeroA-numeroB)
+var subtracao =(numeroA - numeroB)
+
+console.log(numeroA * numeroB)
+var multiplicacao =(numeroA * numeroB)
+
+console.log(numeroA / numeroB)
+var divisao =(numeroA / numeroB)
 
 
 
