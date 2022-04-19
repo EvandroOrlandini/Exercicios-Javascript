@@ -126,10 +126,33 @@ Ela precisa da sua ajuda para saber o total do lucro adquirido. Sua missão é u
 Para lhe auxiliarmos, já deixamos o código inicial:
 
 let janeiro =  100
+
 let fevereiro = 300
+
 let marco = 90
+
 let valorTotal = ?
 
+
+#### Solução:
+
+
+let janeiro = 100
+
+let fevereiro = 300
+
+let marco = 90
+
+console.log(janeiro + fevereiro + marco)
+
+var valorTotal = (janeiro + fevereiro + marco )
+
+
+
+
+
+
+#### Solução:
 
 #### Solução:
 
