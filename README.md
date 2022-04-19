@@ -16,6 +16,7 @@ var idade = 41
 var peso = 60
 
 
+
 ### Exercício 02 - Criando variáveis
 Agora para deixar todo esse conhecimento fixo na mente, precisamos praticar um pouco mais!
 
