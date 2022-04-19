@@ -157,17 +157,19 @@ let numeroA = 6
 
 let numeroB = 2
 
-console.log(numeroA + numeroB
-)
+console.log(numeroA + numeroB)
+
 var soma = (numeroA+numeroB)
 
 console.log(numeroA-numeroB)
+
 var subtracao =(numeroA - numeroB)
 
 console.log(numeroA * numeroB)
 var multiplicacao =(numeroA * numeroB)
 
 console.log(numeroA / numeroB)
+
 var divisao =(numeroA / numeroB)
 
 
