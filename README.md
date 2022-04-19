@@ -1,2 +1,2 @@
-# Exercicios-Javascript
+# Exercícios-Javascript
 Exercícios de Javascript
