@@ -203,6 +203,7 @@ let quantidadeDeTrabalhos = 4
 var media = (trabalhoDeHistoria + trabalhoDeMatematica + trabalhoDeCiencia + trabalhoDeGeografia) / quantidadeDeTrabalhos
 
 
+
 ## Condicionais
 
 
@@ -235,10 +236,12 @@ if(idade<=17){console.log("Olá,"+"nome")}
 
 
 
+
+
 #### Solução:
 
-## Condicionais
-
+#### Solução:
+#### Solução:
 
 
 
