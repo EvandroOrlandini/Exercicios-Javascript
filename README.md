@@ -776,7 +776,6 @@ return autonomia}
 
 
 
-
 ### Exercício 35 - Funções parametrizadas - calculaValorDevido
 A lavanderia DigitalLaundry lava roupa por quilo. Ela cobra dos seus clientes R$ 5,00 por cada quilo de roupa suja. Atualmente, eles usam um caderninho e uma calculadora para descobrir o valor que cada cliente tem a pagar. Precisamos automatizar essa empresa!
 
@@ -797,10 +796,403 @@ function calculaValorDevido(pesoDeRoupaSuja){
    return preco}
 
 
+### Exercício 36 - Usando funções - Começa com Maiúscula
+O código abaixo já tem a função comecaComMaiuscula(palavra) definida. Essa função retorna true caso a palavra passada no parâmetro seja iniciada por uma letra maiúscula e false caso contrário. Use um for  com um contador i para imprimir para cada palavra no array de palavras as seguintes frases: “Começa com maiúscula” caso a palavra comece com maiúscula e “Não começa com maiúscula” caso contrário.
+
 
 #### Solução:
-### Exercício 35 - 
-### Exercício 35 - 
+
+function comecaComMaiuscula(palavra){
+   return /^[A-Z]/.test(palavra);
+}
+ 
+var palavras = ["Amor", "copo", "Bolacha", "biscoito"];
+ 
+ 
+for (var i = 0; i<palavras.length; i++){if(comecaComMaiuscula(palavras[i]))
+
+{ console.log("Começa com maiúscula") } 
+
+else {console.log("Não começa com maiúscula")}}
+
+
+
+### Exercício 37 - Usando funções - Valida CPF
+Para este exercício considere uma função que já foi definida, ela se chama validaCPF.
+
+Esta função recebe um parâmetro que representa um possível CPF e tudo que ela faz resume-se em um único objetivo: retornar true caso o parâmetro seja um CPF válido ou false caso contrário. 
+
+
+Eis aqui algo legal sobre funções: tudo que você precisa para utilizá-las é saber o que ela faz. Você não precisa ver como ela faz.
+
+
+Utilize a função validaCPF para imprimir “CPF válido” caso o cpf “576.524.020-85” seja válido. Caso contrário, imprima “CPF inválido”
+
+#### Solução:
+
+//Lembre-se: a função validaCPF já está definida, mesmo que você não esteja vendo, basta executá-la!
+
+validaCPF("576.524.020-85")
+
+for(var i=0; i<validaCPF.lenght; i++){if(validaCPF[i]==true)
+
+{console.log('CPF válido')}
+
+else{ console.log("CPF inválido")}}
+
+
+
+### Exercício 38 - Usando funções - Filtrar produtos
+Uma loja virtual permite a seus visitantes filtrar produtos pelo preço. Existe um array com os preços dos produtos. Um programador já criou uma função maisBaratosQue(valor, precos) que retorna um array com os preços dos produtos mais baratos que o valor passado como parâmetro. Outro programador já criou uma função maisCarosQue(valor, precos) que retorna um array com os preços mais caros que o valor passado como parâmetro. Chegou sua vez!
+
+Ao testar sua função com os valores: precosEntre(5, 10, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), o resultado é [ 5, 6, 7, 8, 9, 10 ].
+
+[ 5, 6, 7, 8, 9, 10 ]
+
+
+Crie uma função precosEntre(valorMenor, valorMaior, precos) que deve utilizar as funções maisBaratosQue e maisCarosQue para retornar os preços que estão entre o valorMenor e o valorMaior. Sua função deve receber então dois parâmetros:
+
+valorMenor para representar o valor mínimo dos preços a serem listados
+
+valorMaior para representar o valor máximo dos preços a serem listados
+
+precos para representar um array com os preços dos produtos
+
+Ela deve retornar um array com todos os preços entre valorMenor e valorMaior
+
+#### Solução:
+
+function maisBaratosQue(valor, precos) {
+   return precos.filter(p => p <= valor);}
+
+function maisCarosQue(valor, precos) {
+
+   return precos.filter(p => p >= valor);}
+   
+function maisCarosQue(valor, precos) {
+
+   return precos.filter(p => p >= valor);
+
+}
+
+function precosEntre(valorMenor, valorMaior, precos) {
+
+   return maisCarosQue(valorMenor, maisBaratosQue(valorMaior, precos));}
+
+console.log(precosEntre(5, 10, [1,2,3,4,5,6,7,8,9,10]));
+
+
+### Exercício 39 - Usando funções - deixaEntrar
+Uma rede de cinemas quer implementar um sistema para controlar a entrada nas suas salas. Os clientes, antes de entrar na sala, devem apresentar o RG em uma câmera. A câmera seria capaz de ler a data de nascimento do cliente e, caso ele não tenha idade suficiente para assistir a sessão, o acesso dele não seria autorizado.
+
+Um dos programadores já fez uma função que calcula a idade com base na data de nascimento. Ela recebe como parâmetro uma data de nascimento no formato dd/mm/aaaa (dia com dois dígitos, mês com dois dígitos e ano com quatro dígitos) e retorna idade da pessoa hoje.
+
+
+Precisamos agora que você escreva a função deixaEntrar(dataDeNascimento, censura).
+
+
+A função deve receber dois parâmetros:
+
+O primeiro deve representar a data de nascimento do cliente no formato dd/mm/aaaa 
+
+
+O segundo deve representar a censura da sessão, ou seja, a idade mínima do cliente para que ele possa acessar a sala.
+
+
+A função deve retornar true caso o cliente tenha idade maior ou igual a censura e false caso contrário.
+
+#### Solução:
+
+// A função a seguir (calculaIdade) não precisa ser alterada
+// A sua função deve ser escrita logo abaixo desta
+function calcularIdade(dataDeNascimento) {
+   let [dia, mes, ano] = dataDeNascimento.split('/');
+   const d = new Date();
+   const anoAtual = d.getFullYear();
+   const mesAtual = d.getMonth() + 1;
+   const diaAtual = d.getDate();
+   ano = +ano; mes = +mes; dia = +dia;
+   let quantosAnos = anoAtual - ano;
+   if (mesAtual < mes || mesAtual == mes && diaAtual < dia) {
+       quantosAnos--;
+   }
+   return quantosAnos < 0 ? 0 : quantosAnos;}
+ 
+// Escreva aqui sua função
+
+function deixaEntrar(dataDeNascimento, censura)
+
+{ return calcularIdade(dataDeNascimento, censura);}
+
+
+### Exercício 40 -Funções Nativas - Estava presente na aula?
+Nas escolas do futuro não haverá necessidade de chamadas. Ao entrar em sala, uma câmera fará o reconhecimento facial do aluno e registrará sua presença!
+Imagine que, a cada aula, um array guardasse o nome de todos os alunos que estiveram presentes na aula.
+
+Escreva uma função estavaPresenteNaAula(nomeDoAluno, nomesDosPresentes)
+
+Essa função deve receber dois parâmetros:
+
+O primeiro deve representar o nome de um aluno
+
+O segundo deve representar um array com o os nomes dos alunos presentes.
+
+A sua função deve retornar true caso o nome do aluno passado como parâmetro estiver entre os presentes. false caso contrário.
+
+#### Solução:
+
+function estavaPresenteNaAula(nomeDoAluno, nomesDosPresentes)
+
+{if (nomesDosPresentes.indexOf(nomeDoAluno) != -1){return true;}
+
+else{return false;}}
+
+
+
+### Exercício 41 - Funções Nativas - Gerar Dezenas
+Uma fábrica de biscoitos da sorte precisa de um sistema. O sistema deve gerar seis dezenas aleatórias para serem impressas. Sabe como é: Palpites para seus clientes jogarem na mega sena! O seu trabalho é escrever uma função gerarDezenas(). Essa função não recebe nenhum parâmetro. Tudo que ela deve fazer é gerar e retornar um array contendo seis números aleatórios entre 1 e 60.
+
+#### Solução:
+
+function gerarDezenas(){
+array = []
+for(var i = 0; i < 6; i++){
+array.push(Math.round(Math.random()*60))}
+return array}
+
+
+### Exercício 41 - Funções Nativas - Maximo e Minimo
+Escreva uma função maxmin(a, b, c, d, e) que receba cinco números como parâmetros.
+Sua função deve retornar um array onde o primeiro elemento é o menor dos parâmetros da função maxmin e o segundo elemento é o maior dos parâmetros da função maxmin.
+
+#### Solução:
+
+function maxmin(a,b,c,d,e){
+
+   var array=[0,0]
+
+   array[0]=Math.min(a,b,c,d,e)
+
+   array[1]=Math.max(a,b,c,d,e)
+
+   return array}
+
+//Caso queira testar a funçao
+
+console.log(maxmin(1,2,3,4,5))
+
 
 
 ## Exercícios integradores
+
+
+### Exercício 42 - Exercícios integradores -Variáveis, if e loop
+No fim de semana o elevador do nosso prédio quebrou, restringindo muito o fluxo de pessoas. Considerando isso, apenas os moradores dos apartamentos com número par poderão usar o elevador.
+
+Escreva um código que nos informe quais moradores poderão utilizar o elevador com base na variável moradores. O número do apartamento é a sua posição no array. O nome do morador é o valor.
+
+Imprima no console a seguinte frase: 'O morador <nome do morador> pode usar o elevador', substituindo <nome do morador> pelo nome do morador.
+
+#### Solução:
+	
+    var moradores = [
+
+   "Fulano de Tal",
+
+   "Beltrano da Cia",
+
+   "Viajante do Tempo",
+
+   "Morador da Lua",
+
+   "Marciano Azul",
+
+   "Et da Eslováquia",
+
+   "Jedi do Lado Cinza da Força",
+
+   "Baby Yoda Amarelo"]
+
+   for(i=0; i<moradores.length; i++){
+
+   if(i%2==0){console.log("O morador " + moradores[i] + " pode usar o elevador")}}
+	
+	
+	
+### Exercício 41 - 
+
+#### Solução:
+				
+				
+				
+				
+### Exercício 41 - Exercícios integradores - Dados de um usuário
+Em uma  academia estão cadastrando nome, idade e altura de vários usuários.
+
+Um determinado treino exige os seguintes requisitos: Ter 18 anos ou mais e ter uma altura igual ou maior a 1,70.
+
+Crie uma função chamada maiorAlto. Essa função irá receber um array como parâmetro. Este array terá o nome na primeira posição, a idade na segunda posição e a altura em centímetros na terceira posição. Ela também deve retornar verdadeiro (true) caso o aluno atenda os requisitos, ou falso (false) caso contrário.
+
+Exemplo:
+
+maiorAlto(["João da Silva", 18, 170]) // retorna true
+maiorAlto(["Arlete Moura", 17, 150]) // retorna false
+
+#### Solução:
+     
+function maiorAlto (array)
+
+{if(array[1] >= 18 && array[2] >=170 )
+
+{return true}
+
+else{return false}}
+	
+	
+	
+### Exercício 43 - Exercícios integradores - Academia
+Uma academia precisa separar grupos de pessoas tendo como base as suas alturas. Temos um array alunos que contem a altura de cada aluno da academia.
+
+Temos outros 3 arrays: grupoA, grupoB e grupoC. Eles devem ser preenchidos da seguinte forma: 
+
+
+grupoA - Alunos com altura entre 150 a 159
+grupoB - Alunos com altura entre 160 a 169
+grupoC - Alunos com altura de 170 ou mais
+
+
+Seu trabalho é pegar cada valor do array alunos e colocar o valor correspondente em seu respectivo grupo. Para esse exercício, você precisará usar loops, condicionais e funções de arrays. 
+	
+#### Solução:
+	
+var alunos = [170, 159, 151, 187, 156, 191, 165, 154, 167, 169, 171, 170, 160]
+
+var grupoA = [159, 151, 156, 154 ];
+
+var grupoB = [165, 167, 169, 160 ];
+
+var grupoC = [170, 187, 191, 171, 170 ];
+
+function zumbaClass(alunos) {
+
+  for (var i = 0; i < alunos.length; i++) {
+
+  if (grupoA[i] > 150 && alunos[i] <= 159) {
+
+  grupoA.push(alunos[i])} 
+					     
+else if (grupoB[i] > 159 && alunos[i] < 170) 
+						    
+{ grupoB.push(alunos[i])} 
+			
+else if (grupoC[i] >= 170)
+	
+{grupoC.push(alunos[i]) }}}
+	
+	
+### Exercício 44 - Exercícios integradores - Estacionamento
+Um estacionamento deseja automatizar a cobrança de mensalistas. Para isso decidiu simplificar a forma de calcular o valor devido pelo seu cliente. A quantia a ser paga pelos seus usuários depende do número de entradas que o veículo realiza no estacionamento. A cada entrada, a placa do veículo é registrada. Ao final do mês, conta-se o número de entradas que o veículo realizou e faz-se o seguinte cálculo:
+
+
+Se o motorista realizou até 20 entradas, ele deve pagar R$ 10,00 por entrada realizada.
+
+
+Da vigésima primeira entrada em diante, cada entrada custa R$ 5,00 ao cliente.
+
+
+	Agora, você deve ajudar na automatização da cobrança escrevendo duas funções.
+
+
+A primeira função se chama calcularNumeroDeEntradas(placa). Ela deve receber um único parâmetro que representa a placa de um carro. A função deve retornar o número de entradas que esse carro realizou no estacionamento. Em outras palavras, o número de vezes que a placa passada como parâmetro aparece no array placas.
+
+
+A segunda função se chama calcularValorDevido(placa). Ela deve receber um único parâmetro que representa a placa de um carro. A função deve calcular o valor que o proprietário do carro tem que pagar segundo a política de preços estabelecida. Naturalmente, será necessário utilizar a primeira função dentro da segunda.
+	
+	
+#### Solução:
+	
+var placas = [
+
+  'RXB-2525', 'AKX-3333', 'ORO-7142','RXB-2525', 'AKX-3333', 'ORO-7142',
+
+  'AKX-3333', 'RXB-2525', 'AKX-3333','AKX-3333', 'RXB-2525', 'AKX-3333',   'RXB-2525', 'AKX-3333', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+
+  'AKX-3333', 'ORO-7142', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+
+  'AKX-3333', 'AKX-3333', 'RXB-2525','AKX-3333', 'AKX-3333', 'RXB-2525',
+
+  'AKX-3333', 'ORO-7142', 'ORO-7142','AKX-3333', 'ORO-7142', 'ORO-7142',
+
+  'ORO-7142', 'RXB-2525', 'AKX-3333','AKX-3333', 'ORO-7142', 'ORO-7142',
+
+  'AKX-3333', 'RXB-2525', 'AKX-3333','AKX-3333', 'RXB-2525', 'AKX-3333',
+
+  'RXB-2525', 'AKX-3333', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+
+  'AKX-3333', 'ORO-7142', 'ORO-7142','AKX-3333', 'AKX-3333', 'RXB-2525',
+
+  'AKX-3333', 'AKX-3333', 'RXB-2525','AKX-3333', 'AKX-3333', 'RXB-2525'
+
+]
+
+function calcularNumeroDeEntradas(placa){
+
+  var cont = 0;
+
+  for (var i = 0 ; i < placas.length ; i++) {
+
+     if (placas[i] == placa) 
+				    
+
+{ cont++; } }
+
+  return cont;}
+
+function calcularValorDevido(placa){
+
+  var numEntradas = calcularNumeroDeEntradas(placa);
+
+  if (numEntradas <= 20) 
+	
+{ return 10.00 * numEntradas;} 
+ else {return (200 + (numEntradas - 20) * 5);}}
+	
+
+### Exercício 45 - Exercícios integradores - Cinema
+Em um site sobre cinema, os visitantes cadastrados podem dar notas de 0 a 5 para um filme que ele tenha assistido. Cada filme tem um grande array de notas atribuídas pelos visitantes. Contudo, além de dar notas para os filmes, os visitantes querem ver o que as outras pessoas acharam do filme! É aí que você entra com seu código:
+
+Escreva uma função calculaGostos(notas)
+
+Essa função deve ser escrita para receber somente um parâmetro: um array de notas. Ela deve retornar também um array com três elementos:
+
+O primeiro, com a quantidade de notas iguais a 0 ou 1. Seriam os que não gostaram do filme
+
+O segundo, com a quantidade de notas iguais a 2 ou 3. Seriam os que acharam o filme mediano
+
+O terceiro, com a quantidade de notas iguais a 4 ou 5. Seriam os que gostaram do filme.
+
+#### Solução:
+	
+function calculaGostos (notas) {
+
+   var nNaoGostaram = 0;
+
+   var nMediano = 0;
+
+   var nGostaram = 0;
+
+   for (var i = 0 ; i < notas.length ; i++) {
+
+   if (notas[i] >= 0 && notas[i] < 2) { nNaoGostaram++; }  
+
+      else if(notas[i] >= 2 && notas[i] < 4) { nMediano++;} 
+					   
+      else {nGostaram++;}}
+
+   return [nNaoGostaram, nMediano, nGostaram];}
+				
+				
+				
+				
+				
+				
