@@ -24,8 +24,11 @@ Declare 4 variáveis: nome, sobrenome, numeroDaSorte e idade. Atribua um valor p
 #### Solução:
 
 var nome = "Evandro"
+
 var sobrenome = "Orlandini"
+
 var numeroDaSorte = 12
+
 var idade = 41
 
 
