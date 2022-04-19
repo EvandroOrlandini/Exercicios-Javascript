@@ -658,7 +658,23 @@ for(var i = 0; i < lista.length; i++){console.log(lista[i])}}
 
 
 
+### Exercício 30 -Declarando funções - Cartão de visita
+Crie uma função chamada cartaoDeVisitas, ela deverá imprimir o seu nome em conjunto com sobrenome! 
+
+Para isso lembre, da estrutura de que uma função deve ter. 
+
 #### Solução:
+
+function cartaoDeVisitas (nomeCompleto){var nome = "Evandro"
+
+var sobrenome = "Orlandini"
+
+var nomeCompleto= nome + " " + sobrenome 
+
+{console.log (cartaoDeVisita) }
+}
+
+
 
 #### Solução:
 ## Exercícios integradores
