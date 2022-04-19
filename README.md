@@ -1092,7 +1092,8 @@ else if (grupoC[i] >= 170)
 	
 ### Exercício 44 - Exercícios integradores - Estacionamento
 Um estacionamento deseja automatizar a cobrança de mensalistas. Para isso decidiu simplificar a forma de calcular o valor devido pelo seu cliente. A quantia a ser paga pelos seus usuários depende do número de entradas que o veículo realiza no estacionamento. A cada entrada, a placa do veículo é registrada. Ao final do mês, conta-se o número de entradas que o veículo realizou e faz-se o seguinte cálculo:
-
+	
+	
 
 Se o motorista realizou até 20 entradas, ele deve pagar R$ 10,00 por entrada realizada.
 
@@ -1107,6 +1108,7 @@ A primeira função se chama calcularNumeroDeEntradas(placa). Ela deve receber u
 
 
 A segunda função se chama calcularValorDevido(placa). Ela deve receber um único parâmetro que representa a placa de um carro. A função deve calcular o valor que o proprietário do carro tem que pagar segundo a política de preços estabelecida. Naturalmente, será necessário utilizar a primeira função dentro da segunda.
+	
 	
 	
 #### Solução:
@@ -1170,6 +1172,8 @@ O primeiro, com a quantidade de notas iguais a 0 ou 1. Seriam os que não gostar
 O segundo, com a quantidade de notas iguais a 2 ou 3. Seriam os que acharam o filme mediano
 
 O terceiro, com a quantidade de notas iguais a 4 ou 5. Seriam os que gostaram do filme.
+	
+	
 
 #### Solução:
 	
@@ -1190,6 +1194,9 @@ function calculaGostos (notas) {
       else {nGostaram++;}}
 
    return [nNaoGostaram, nMediano, nGostaram];}
+					    
+					    
+      Resultado da sua função = 3,2,1
 				
 				
 				
