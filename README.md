@@ -563,10 +563,32 @@ let totalNegativos = 0
 for(let i = 0; i< listaDeGanhos.length; i++){if(listaDeGanhos[i] < 0){ totalNegativos++; }}
 
 
+### Exercício 26 - Break e Continue - Números Pares
+Precisamos imprimir somente os números pares de 0 a 20. Mas temos alguns requisitos, você precisa utilizar, o loop for, o comando continue e o número deve ser o contador do loop! Vamos lá?
 
-
+Dica: no seu for, utilize como contador uma variável chamada i.
 
 #### Solução:
+for ( let  i  =  0 ;  i  <=  20 ;  i ++ ) { if ( i % 2 != 0 ) { continue } 
+
+else { console . log ( i )  } }
+
+
+### Exercício 27 - Break e Continue - Bingo
+Vamos criar um bingo, onde os números da cartela serão representados por um array chamado cartela, e o número sorteado deve ficar em uma variável chamada numeroSorteado. Seu trabalho será  verificar se existe o número sorteado na cartela, quando encontrar deve imprimir “Encontrei o número!” e parar o loop! 
+
+#### Solução:
+var cartela = [8, 13, 18, 22, 42, 49]
+
+var numeroSorteado = 42
+
+for(var i = 0; i < cartela.length; i++) {if(cartela[i] == numeroSorteado) {console.log("Encontrei o número!")
+break}}
+
+
+
+
+
 #### Solução:
 
 
