@@ -32,6 +32,24 @@ var numeroDaSorte = 12
 var idade = 41
 
 
+### Exercício 03 - Tipos de dados
+Escreva no arquivo script as variáveis expostas abaixo substituindo os tipos de dados citados por valores, conforme vimos no material teórico: 
+
+var idade = Number
+
+var sobrenome = String
+
+var salarioMinimo = Float 
+
+#### Solução:
+
+var idade = 41
+
+var sobrenome ="Orlandini"
+
+var salarioMinimo = 1.212
+
+
 ## Condicionais
 
 
