@@ -173,10 +173,38 @@ console.log(numeroA / numeroB)
 var divisao =(numeroA / numeroB)
 
 
+### Exercício 08 - Cálculo de média
+Um sistema de gestão escolar quer calcular a média das notas de um aluno.
+
+Ele guarda em variáveis as notas de cada um dos trabalhos realizados:
+
+let trabalhoDeHistoria = 8.0
+let trabalhoDeMatematica = 7.0
+let trabalhoDeCiencia = 10
+let trabalhoDeGeografia = 9.5
 
 
+Sua missão é completar o código para fazer com que o sistema calcule a média das notas, somando-as e dividindo o total pela quantidade de trabalhos (variável quantidadeDeTrabalhos).
+
+Atribua o resultado dessa conta a uma variável chamada media
 
 #### Solução:
+
+let trabalhoDeHistoria = 8.0
+
+let trabalhoDeMatematica = 7.0
+
+let trabalhoDeCiencia = 10
+
+let trabalhoDeGeografia = 9.5
+
+let quantidadeDeTrabalhos = 4
+
+var media = (trabalhoDeHistoria + trabalhoDeMatematica + trabalhoDeCiencia + trabalhoDeGeografia) / quantidadeDeTrabalhos
+
+
+
+
 
 #### Solução:
 
