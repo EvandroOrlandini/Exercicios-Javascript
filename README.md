@@ -76,7 +76,42 @@ var possuiPet = false
 var filmesFavoritos = [ "ET", "Rambo",]
 
 
+### Exercício 05 - Usando variáveis -Cartão de Visita
+Temos um desafio para você! 
 
+Precisamos criar um código que gere cartão de visita com nome, sobrenome e profissão dos clientes, para isso:
+
+Crie uma variável para guardar cada informação (cada uma deve receber um dos 3 nomes acima), 
+Depois faça a concatenação das informações em uma nova variável chamada cartaoDeVisita.
+
+Exemplo:
+
+nome: Taylor
+
+sobrenome: Alvarenga
+
+profissão: Programadora
+
+
+#### Solução:
+
+var nome = "Taylor"
+
+var sobrenome = "Alvarenga"
+
+var profissao = "Programadora"
+
+
+var cartaoDeVisita = nome + ' ' + sobrenome +  ' - ' + profissao
+console.log(cartaoDeVisita)
+
+
+
+
+
+#### Solução:
+
+#### Solução:
 
 ## Condicionais
 
