@@ -9,6 +9,7 @@ Vamos escrever nossas primeiras variáveis juntos. Você irá usar tudo que apre
 
 Declare duas variáveis chamadas  idade  e  peso,  e atribua um valor numérico a ambas.
 
+Solução:
 var idade = 41 
 
 var peso = 60
