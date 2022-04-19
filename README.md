@@ -477,12 +477,19 @@ console.log(valor + " x " + i + " = " + valor * i)
 Vamos criar um robô que manda “Bom dia, grupo!” 7 vezes. Utilize o laço de repetição for para fazer com mais praticidade!
 
 Bom dia, grupo!
+
 Bom dia, grupo!
+
 Bom dia, grupo!
+
 Bom dia, grupo!
+
 Bom dia, grupo!
+
 Bom dia, grupo!
+
 Bom dia, grupo!
+
 
 #### Solução:
 for(var i = 0; i < 7; i++){console.log("Bom dia, grupo!");}
