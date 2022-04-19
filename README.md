@@ -530,7 +530,7 @@ var frase = "Nome do Carro: "var numeroDePosicoes
 for (let i = 0; i < listaDeCarros.length; i++) {console.log(frase + listaDeCarros[i])}
 
 
-### Exercício 24 - Loop Array - Frutas
+### Exercício 25 - Loop Array - Frutas
 Um sacolão montou uma lista com as frutas que eles vendem, e de acordo com a fruta que o usuário busca eles querem informar se existe a fruta na lista ou não! 
 
 var listaDeFrutas = [ "Uva", "Banana",  "Manga", "Cajá", "Pinha"]
@@ -546,7 +546,7 @@ var busca = "Banana"
 for (var i=0; i < listaDeFrutas.length; i++){if (busca == listaDeFrutas[i]) {console.log('Sim, temos a fruta '+ busca +' disponível')}}
 
 
-### Exercício 25 - Loop com Array - Saldo negativo
+### Exercício 26 - Loop com Array - Saldo negativo
 Uma empresa mandou uma lista contendo os números mensais de tudo o que ela faturou, e nosso trabalho é ajudá-los a criar um relatório que exiba em quantos meses eles tiveram o saldo negativo.
 
 
@@ -564,7 +564,7 @@ let totalNegativos = 0
 for(let i = 0; i< listaDeGanhos.length; i++){if(listaDeGanhos[i] < 0){ totalNegativos++; }}
 
 
-### Exercício 26 - Break e Continue - Números Pares
+### Exercício 27 - Break e Continue - Números Pares
 Precisamos imprimir somente os números pares de 0 a 20. Mas temos alguns requisitos, você precisa utilizar, o loop for, o comando continue e o número deve ser o contador do loop! Vamos lá?
 
 Dica: no seu for, utilize como contador uma variável chamada i.
@@ -575,7 +575,7 @@ for ( let  i  =  0 ;  i  <=  20 ;  i ++ ) { if ( i % 2 != 0 ) { continue }
 else { console . log ( i )  } }
 
 
-### Exercício 27 - Break e Continue - Bingo
+### Exercício 28 - Break e Continue - Bingo
 Vamos criar um bingo, onde os números da cartela serão representados por um array chamado cartela, e o número sorteado deve ficar em uma variável chamada numeroSorteado. Seu trabalho será  verificar se existe o número sorteado na cartela, quando encontrar deve imprimir “Encontrei o número!” e parar o loop! 
 
 #### Solução:
@@ -588,7 +588,7 @@ break}}
 
 
 
-### Exercício 28 - Break e Continue - Sobrenome da família
+### Exercício 29 - Break e Continue - Sobrenome da família
 
 Temos uma lista com nomes de todos os integrantes da família mas esqueceram de colocar o sobrenome! 
 Seu desafio será imprimir nome junto com o sobrenome “Macedo” para cada integrante da família. Mas temos uma exceção, temos um integrante com sobrenome diferente, se tiver algum “Pedro”, coloque o sobrenome “Sousa”.
@@ -622,7 +622,7 @@ continue}console.log(familia[i] + " Macedo");}
 
 
 
-### Exercício 29 - Break e Continue - Baralho
+### Exercício 30 - Break e Continue - Baralho
 Temos um array em uma variável chamada baralho e precisamos de um script que procure a carta “Rei” entre as cartas do baralho. Assim que encontrar o “Rei” pare o loop utilizando break  e exiba um console.log a seguinte frase: Encontrei o Rei!
 
 #### Solução:
@@ -639,7 +639,7 @@ for(let i = 0; i< baralho.length; i++){if(baralho[i] == "Rei")
 
 ## Funções
 
-### Exercício 29 - Declarando funções - Listar produtos
+### Exercício 31 - Declarando funções - Listar produtos
 Um mercado tem uma lista de produtos, que eles querem exibir para todo novo cliente que chegar! Como o processo é um pouco trabalhoso e repetitivo eles precisam do seu conhecimento em funções para ajudá-los.
 
 Eles já tem um código, porém toda vez eles precisam reescrever o código para exibir ao cliente:
@@ -675,7 +675,7 @@ var nomeCompleto= nome + " " + sobrenome
 {console.log (cartaoDeVisita) }
 }
 
-### Exercício 31 - Declarando funções - Tabuada do Sete
+### Exercício 32 - Declarando funções - Tabuada do Sete
 Uma professora quer ajudar os alunos a decorarem a tabuada do 7 exibindo o resultado para eles! 
 Crie uma função chamada tabuadaDoSete que imprima a tabuada do sete utilizando um loop.
 
@@ -714,9 +714,7 @@ for( var i = 1; i <= 10; i++) {console.log('7 x ' + i +' = ' +7*i) } }
    tabuadaDoSete()
 
 
-
-
-### Exercício 32 -Funções parametrizadas - Menor Número
+### Exercício 33 -Funções parametrizadas - Menor Número
 Escreva uma função chamada menorNumero. Ela deve receber dois números como parâmetro e retornar o menor entre eles. Caso os números sejam iguais, basta que se retorne qualquer um deles.
 
 #### Solução:
@@ -727,7 +725,7 @@ else {return b;}}
 
 
 
-### Exercício 33 -Funções parametrizadas - calculaValorDevido 2
+### Exercício 34 -Funções parametrizadas - calculaValorDevido 2
 Depois de nossa consultoria, a lavanderia DigitalLaundry percebeu que poderia deixar a sua cobrança mais sofisticada e justa. Ela decidiu cobrar R$10,00 fixo, a título de taxa de serviço (independente da quantidade de roupa), mais R$ 3,00 por quilo de roupa suja. Reescreva a função calculaValorDevido
 
 function calculaValorDevido(pesoDeRoupaSuja){
@@ -747,7 +745,7 @@ function calculaValorDevido(pesoDeRoupaSuja){ var preco = pesoDeRoupaSuja*3
 }
 
 
-### Exercício 34 -Funções parametrizadas - Autonommia
+### Exercício 35 -Funções parametrizadas - Autonommia
 Os engenheiros de uma montadora estão projetando o computador de bordo de um carro. Eles precisam de uma função que possa calcular a autonomia atual do automóvel, em outras palavras, quantos quilômetros ele consegue andar com a quantidade de combustível atual. A autonomia pode ser obtida multiplicando a quantidade de combustível pelo rendimento. Será que você consegue ajudá-los?
 
 Escreva uma função chamada autonomia:
@@ -776,8 +774,7 @@ return autonomia}
 
 
 
-
-### Exercício 35 - Funções parametrizadas - calculaValorDevido
+### Exercício 36 - Funções parametrizadas - calculaValorDevido
 A lavanderia DigitalLaundry lava roupa por quilo. Ela cobra dos seus clientes R$ 5,00 por cada quilo de roupa suja. Atualmente, eles usam um caderninho e uma calculadora para descobrir o valor que cada cliente tem a pagar. Precisamos automatizar essa empresa!
 
 Escreva uma função calculaValorDevido
@@ -797,7 +794,7 @@ function calculaValorDevido(pesoDeRoupaSuja){
    return preco}
 
 
-### Exercício 36 - Usando funções - Começa com Maiúscula
+### Exercício 37 - Usando funções - Começa com Maiúscula
 O código abaixo já tem a função comecaComMaiuscula(palavra) definida. Essa função retorna true caso a palavra passada no parâmetro seja iniciada por uma letra maiúscula e false caso contrário. Use um for  com um contador i para imprimir para cada palavra no array de palavras as seguintes frases: “Começa com maiúscula” caso a palavra comece com maiúscula e “Não começa com maiúscula” caso contrário.
 
 
@@ -818,7 +815,7 @@ else {console.log("Não começa com maiúscula")}}
 
 
 
-### Exercício 37 - Usando funções - Valida CPF
+### Exercício 38 - Usando funções - Valida CPF
 Para este exercício considere uma função que já foi definida, ela se chama validaCPF.
 
 Esta função recebe um parâmetro que representa um possível CPF e tudo que ela faz resume-se em um único objetivo: retornar true caso o parâmetro seja um CPF válido ou false caso contrário. 
@@ -843,7 +840,7 @@ else{ console.log("CPF inválido")}}
 
 
 
-### Exercício 38 - Usando funções - Filtrar produtos
+### Exercício 39 - Usando funções - Filtrar produtos
 Uma loja virtual permite a seus visitantes filtrar produtos pelo preço. Existe um array com os preços dos produtos. Um programador já criou uma função maisBaratosQue(valor, precos) que retorna um array com os preços dos produtos mais baratos que o valor passado como parâmetro. Outro programador já criou uma função maisCarosQue(valor, precos) que retorna um array com os preços mais caros que o valor passado como parâmetro. Chegou sua vez!
 
 Ao testar sua função com os valores: precosEntre(5, 10, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), o resultado é [ 5, 6, 7, 8, 9, 10 ].
@@ -883,7 +880,7 @@ function precosEntre(valorMenor, valorMaior, precos) {
 console.log(precosEntre(5, 10, [1,2,3,4,5,6,7,8,9,10]));
 
 
-### Exercício 39 - Usando funções - deixaEntrar
+### Exercício 40 - Usando funções - deixaEntrar
 Uma rede de cinemas quer implementar um sistema para controlar a entrada nas suas salas. Os clientes, antes de entrar na sala, devem apresentar o RG em uma câmera. A câmera seria capaz de ler a data de nascimento do cliente e, caso ele não tenha idade suficiente para assistir a sessão, o acesso dele não seria autorizado.
 
 Um dos programadores já fez uma função que calcula a idade com base na data de nascimento. Ela recebe como parâmetro uma data de nascimento no formato dd/mm/aaaa (dia com dois dígitos, mês com dois dígitos e ano com quatro dígitos) e retorna idade da pessoa hoje.
@@ -926,7 +923,7 @@ function deixaEntrar(dataDeNascimento, censura)
 { return calcularIdade(dataDeNascimento, censura);}
 
 
-### Exercício 40 -Funções Nativas - Estava presente na aula?
+### Exercício 41 -Funções Nativas - Estava presente na aula?
 Nas escolas do futuro não haverá necessidade de chamadas. Ao entrar em sala, uma câmera fará o reconhecimento facial do aluno e registrará sua presença!
 Imagine que, a cada aula, um array guardasse o nome de todos os alunos que estiveram presentes na aula.
 
@@ -950,7 +947,7 @@ else{return false;}}
 
 
 
-### Exercício 41 - Funções Nativas - Gerar Dezenas
+### Exercício 42 - Funções Nativas - Gerar Dezenas
 Uma fábrica de biscoitos da sorte precisa de um sistema. O sistema deve gerar seis dezenas aleatórias para serem impressas. Sabe como é: Palpites para seus clientes jogarem na mega sena! O seu trabalho é escrever uma função gerarDezenas(). Essa função não recebe nenhum parâmetro. Tudo que ela deve fazer é gerar e retornar um array contendo seis números aleatórios entre 1 e 60.
 
 #### Solução:
@@ -962,7 +959,7 @@ array.push(Math.round(Math.random()*60))}
 return array}
 
 
-### Exercício 41 - Funções Nativas - Maximo e Minimo
+### Exercício 43 - Funções Nativas - Maximo e Minimo
 Escreva uma função maxmin(a, b, c, d, e) que receba cinco números como parâmetros.
 Sua função deve retornar um array onde o primeiro elemento é o menor dos parâmetros da função maxmin e o segundo elemento é o maior dos parâmetros da função maxmin.
 
@@ -987,7 +984,7 @@ console.log(maxmin(1,2,3,4,5))
 ## Exercícios integradores
 
 
-### Exercício 42 - Exercícios integradores -Variáveis, if e loop
+### Exercício 44 - Exercícios integradores -Variáveis, if e loop
 No fim de semana o elevador do nosso prédio quebrou, restringindo muito o fluxo de pessoas. Considerando isso, apenas os moradores dos apartamentos com número par poderão usar o elevador.
 
 Escreva um código que nos informe quais moradores poderão utilizar o elevador com base na variável moradores. O número do apartamento é a sua posição no array. O nome do morador é o valor.
@@ -1018,16 +1015,9 @@ Imprima no console a seguinte frase: 'O morador <nome do morador> pode usar o el
 
    if(i%2==0){console.log("O morador " + moradores[i] + " pode usar o elevador")}}
 	
-	
-	
-### Exercício 41 - 
-
-#### Solução:
+					
 				
-				
-				
-				
-### Exercício 41 - Exercícios integradores - Dados de um usuário
+### Exercício 45 - Exercícios integradores - Dados de um usuário
 Em uma  academia estão cadastrando nome, idade e altura de vários usuários.
 
 Um determinado treino exige os seguintes requisitos: Ter 18 anos ou mais e ter uma altura igual ou maior a 1,70.
@@ -1051,7 +1041,7 @@ else{return false}}
 	
 	
 	
-### Exercício 43 - Exercícios integradores - Academia
+### Exercício 46 - Exercícios integradores - Academia
 Uma academia precisa separar grupos de pessoas tendo como base as suas alturas. Temos um array alunos que contem a altura de cada aluno da academia.
 
 Temos outros 3 arrays: grupoA, grupoB e grupoC. Eles devem ser preenchidos da seguinte forma: 
@@ -1091,7 +1081,7 @@ else if (grupoC[i] >= 170)
 {grupoC.push(alunos[i]) }}}
 	
 	
-### Exercício 44 - Exercícios integradores - Estacionamento
+### Exercício 47 - Exercícios integradores - Estacionamento
 Um estacionamento deseja automatizar a cobrança de mensalistas. Para isso decidiu simplificar a forma de calcular o valor devido pelo seu cliente. A quantia a ser paga pelos seus usuários depende do número de entradas que o veículo realiza no estacionamento. A cada entrada, a placa do veículo é registrada. Ao final do mês, conta-se o número de entradas que o veículo realizou e faz-se o seguinte cálculo:
 	
 	
@@ -1161,7 +1151,7 @@ function calcularValorDevido(placa){
  else {return (200 + (numEntradas - 20) * 5);}}
 	
 
-### Exercício 45 - Exercícios integradores - Cinema
+### Exercício 48 - Exercícios integradores - Cinema
 Em um site sobre cinema, os visitantes cadastrados podem dar notas de 0 a 5 para um filme que ele tenha assistido. Cada filme tem um grande array de notas atribuídas pelos visitantes. Contudo, além de dar notas para os filmes, os visitantes querem ver o que as outras pessoas acharam do filme! É aí que você entra com seu código:
 
 Escreva uma função calculaGostos(notas)
