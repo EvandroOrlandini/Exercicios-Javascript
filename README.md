@@ -50,6 +50,38 @@ var sobrenome ="Orlandini"
 var salarioMinimo = 1.212
 
 
+### Exercício 04 - Tipos de dados
+Vamos continuar praticando a declaração de variáveis e atribuição de valores: 
+
+
+Declare cinco variáveis com a nomenclatura a seguir e atribua a tais, um valor que atenda o tipo de dado indicado:
+
+- nome (string) 
+- 
+- idade (number)
+- 
+- altura (float)
+- 
+- possuiPet (boolean)
+- 
+- filmesFavoritos (array)
+
+
+#### Solução:
+
+var nome = "Evandro"
+
+var idade = 41
+
+var altura = 1.69
+
+var possuiPet = false
+
+var filmesFavoritos = [ "ET", "Rambo",]
+
+
+
+
 ## Condicionais
 
 
