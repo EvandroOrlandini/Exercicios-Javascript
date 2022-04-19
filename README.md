@@ -715,9 +715,25 @@ for( var i = 1; i <= 10; i++) {console.log('7 x ' + i +' = ' +7*i) } }
 
 
 
-### Exercício 31 -
+### Exercício 32 -Funções parametrizadas - Menor Número
+Escreva uma função chamada menorNumero. Ela deve receber dois números como parâmetro e retornar o menor entre eles. Caso os números sejam iguais, basta que se retorne qualquer um deles.
+
 #### Solução:
 
+function menorNumero(a,b){ if(a < b) {return a;}
+
+else {return b;}}
+
+
+
+
+
+
+
+
+#### Solução:
+### Exercício 31 -
+### Exercício 31 -
 
 
 ## Exercícios integradores
