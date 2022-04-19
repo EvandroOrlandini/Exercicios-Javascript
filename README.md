@@ -412,14 +412,60 @@ if(produtoQtd >0 && produtoAtivo){console.log("Você pode finalizar essa compra"
 else{console.log("Produto não está disponível para compra")}
 
 
+### Exercício 20 - Condicional - Operadores lógicos - Banco
+Será que posso ir ao banco?
+
+Precisamos criar um código que ajude os usuários a saber se podem ir ao banco. Sabemos que o banco está aberto em todos os os dias da semana, exceto em  finais de semana. Caso o usuário possa ir ao banco você deve exibir com console.log a seguinte mensagem: “Você pode ir ao banco”, caso contrário, "O banco está fechado, tente outro dia".
+
+Para esse exercício leve em consideração as seguintes informações:
+
+- Dias da semana pro sistema: segunda, terca, quarta, quinta, sexta, sabado e domingo.
+- Você terá a seguinte variável no código: diaSemana
+- Para esse exercício você deve usar na condição do if o operador && para juntar as condições lógicas junto ao operador diferente de(!=).
 
 #### Solução:
-#### Solução:
-#### Solução:
+
+let diaSemana = 'sabado'
+
+if(diaSemana != 'sabado' && diaSemana != 'domingo'){console.log("Você pode ir ao banco")}
+
+else { console.log("O banco está fechado, tente outro dia")}
+
 
 ## Loops
 
+### Exercício 21 - Loop For - Tabuada
+Precisamos de um código que calcule a tabuada de multiplicação do 7 e imprima a expressão seguido do resultado. 
+Exemplo:
 
+
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+
+
+Lembre-se de fazer a multiplicação do 7 x 1 até 7 x 10! 
+
+Ah, uma última dica: Você deve usar a variável i que é nosso contador para concatenar na hora de montar a mensagem “7 x 1”!
+Afinal os valores depois do " x " (1,2,3,4…) são os valores que mudam de acordo com cada interação do loop.
+
+#### Solução:
+var valor = 7;
+
+for(var i = 1; i < 11; i++)
+
+console.log(valor + " x " + i + " = " + valor * i)  
+
+
+
+#### Solução:
 
 ## Funções
 
