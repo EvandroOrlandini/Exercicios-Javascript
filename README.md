@@ -529,10 +529,23 @@ var frase = "Nome do Carro: "var numeroDePosicoes
 for (let i = 0; i < listaDeCarros.length; i++) {console.log(frase + listaDeCarros[i])}
 
 
+### Exercício 24 - Loop Array - Frutas
+Um sacolão montou uma lista com as frutas que eles vendem, e de acordo com a fruta que o usuário busca eles querem informar se existe a fruta na lista ou não! 
 
+var listaDeFrutas = [ "Uva", "Banana",  "Manga", "Cajá", "Pinha"]
 
+Você deverá criar um loop que verifique se a fruta contida na variável busca existe na lista de frutas do sacolão. Se existe basta exibir uma mensagem, “Sim, temos a fruta banana disponível”. Use a variável busca para exibir o nome da fruta nessa mensagem de forma dinâmica. 
 
 #### Solução:
+
+var listaDeFrutas = ["Uva", "Banana", "Manga", "Cajá", "Pinha"];
+
+var busca = "Banana"
+
+for (var i=0; i < listaDeFrutas.length; i++){if (busca == listaDeFrutas[i]) {console.log('Sim, temos a fruta '+ busca +' disponível')}}
+
+
+
 #### Solução:
 
 ## Funções
