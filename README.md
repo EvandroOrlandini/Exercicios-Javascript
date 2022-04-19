@@ -439,7 +439,7 @@ Precisamos de um código que calcule a tabuada de multiplicação do 7 e imprima
 Exemplo:
 
 
-7 x 1 = 
+7 x 1 = 07
 
 7 x 2 = 14
 
