@@ -1,5 +1,5 @@
 # Exercícios-Javascript
-49 Exercícios de nivelamento em Javascript
+49 Exercícios de nivelamento em Javascript.
 
 # Exercícios
 
