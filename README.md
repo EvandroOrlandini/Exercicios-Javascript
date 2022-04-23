@@ -745,7 +745,7 @@ function calculaValorDevido(pesoDeRoupaSuja){ var preco = pesoDeRoupaSuja*3
 }
 
 
-### Exercício 36 -Funções parametrizadas - Autonommia
+### Exercício 36 -Funções parametrizadas - Autonomia
 Os engenheiros de uma montadora estão projetando o computador de bordo de um carro. Eles precisam de uma função que possa calcular a autonomia atual do automóvel, em outras palavras, quantos quilômetros ele consegue andar com a quantidade de combustível atual. A autonomia pode ser obtida multiplicando a quantidade de combustível pelo rendimento. Será que você consegue ajudá-los?
 
 Escreva uma função chamada autonomia:
