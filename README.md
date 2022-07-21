@@ -24,9 +24,9 @@ Declare 4 variáveis: nome, sobrenome, numeroDaSorte e idade. Atribua um valor p
 
 #### Solução:
 
-var nome = "Evandro"
+var nome = "João"
 
-var sobrenome = "Orlandini"
+var sobrenome = "Lemon"
 
 var numeroDaSorte = 12
 
@@ -46,9 +46,9 @@ var salarioMinimo = Float
 
 var idade = 41
 
-var sobrenome ="Orlandini"
+var sobrenome ="Lemon"
 
-var salarioMinimo = 1.212
+var salarioMinimo = 3.000
 
 
 ### Exercício 04 - Tipos de dados
@@ -66,7 +66,7 @@ Declare cinco variáveis com a nomenclatura a seguir e atribua a tais, um valor 
 
 #### Solução:
 
-var nome = "Evandro"
+var nome = "João"
 
 var idade = 41
 
